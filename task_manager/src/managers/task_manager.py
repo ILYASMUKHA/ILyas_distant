@@ -3,10 +3,7 @@ from src.utils.db import save_tasks_to_db, load_tasks_from_db
 
 class TaskManager:
     def __init__(self, db_path='tasks.db'):
-        """
-        Инициализирует менеджер задач.
-        :param db_path: Путь к базе данных (по умолчанию 'tasks.db').
-        """
+
         self.db_path = db_path
         self.tasks = []
         self.load_tasks_from_db()
